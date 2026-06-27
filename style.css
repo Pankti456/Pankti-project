@@ -1,0 +1,152 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding-top: 70px; /* Leaves space for the top nav bar */
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    zIndex: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.nav-brand { font-weight: bold; font-size: 20px; }
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.nav-links a:hover { color: #3b82f6; }
+
+/* Content Layout */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 450px;
+    margin: 30px auto;
+}
+h2, h3 { margin-top: 10px; text-align: center; color: #0f172a;}
+.subtitle { text-align: center; color: #64748b; font-size: 14px; margin-top: -10px; margin-bottom: 25px; }
+
+.card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+.bg-blue { background-color: #eff6ff; border-color: #bfdbfe; }
+ul { padding-left: 20px; margin: 0; }
+li { margin-bottom: 10px; }
+
+input[type="text"] {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.meter-container {
+    background: #e2e8f0;
+    height: 8px;
+    border-radius: 4px;
+    margin: 12px 0 6px 0;
+    overflow: hidden;
+}
+.bar { height: 100%; width: 0%; transition: all 0.3s ease; }
+#strengthText { margin: 0; font-size: 14px; font-weight: bold; text-align: center;}
+.generator-row { display: flex; gap: 10px; margin-top: 10px; }
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover { background: #1d4ed8; }
+.hint { font-size: 11px; color: #64748b; margin-top: 5px; text-align: center; }
+.divider { border: 0; height: 1px; background: #e2e8f0; margin: 40px 0; }
+.nav-links a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 5px;
+}
+/* ==========================================
+   👨‍💻 DEVELOPER & FOOTER CUSTOM STYLES
+   ========================================== */
+
+/* The Global Page Footer */
+.site-footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 24px 0;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.site-footer a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.site-footer a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* The Specialized Developer Profile Card on About Page */
+.profile-card {
+    border-left: 4px solid #2563eb; /* Adds a clean blue accent anchor bar */
+    background: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Micro-interaction: Subtle lift when hovered */
+.profile-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px rgba(37, 99, 235, 0.06);
+}
+
+.profile-details {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 12px;
+}
+
+.profile-details strong {
+    color: #0f172a;
+}
+
+/* Academic Integrity Callout Block */
+.integrity-box {
+    margin-top: 15px;
+    background: #f1f5f9;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #475569;
+    border-left: 2px solid #94a3b8;
+    line-height: 1.5;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Shield: Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">🛡️ CyberShield</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home (Tool)</a>
+            <a href="about.html">About Project</a>
+            <a href="tips.html">Security Tips</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>🔐 Password Toolkit</h2>
+        <p class="subtitle"> Capstone Project</p>
+
+        <!-- Checker Card -->
+        <div class="card">
+            <h3>Check Password Strength</h3>
+            <input type="text" id="passwordInput" placeholder="Type a password to test..." oninput="checkStrength()">
+            <div class="meter-container">
+                <div id="strengthBar" class="bar"></div>
+            </div>
+            <p id="strengthText">Enter a password</p>
+        </div>
+
+        <!-- Generator Card -->
+        <div class="card">
+            <h3>Generate Secure Password</h3>
+            <div class="generator-row">
+                <input type="text" id="generatedPassword" readonly placeholder="Click generate...">
+                <button onclick="generatePassword()">Generate</button>
+            </div>
+            <div class="hint">Creates an industry-compliant 14-character strong key.</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+<!-- Project Footer with Developer Info -->
+    <footer style="text-align: center; margin-top: 50px; padding: 20px 0; border-top: 1px solid #e2e8f0; color: #64748b; font-size: 13px;">
+        <p>© 2026 CyberShield Project. All Rights Reserved.</p>
+        <p style="margin-top: 5px;">
+            Designed & Developed by <strong>Morawala Pankti</strong> | 
+            Contact: <a href="mailto:panktimorawala@gmail.com" style="color: #2563eb; text-decoration: none; font-weight: 500;">panktimorawala@gmail.com</a>
+        </p>
+    </footer>
+
+    
+       
+    
+</body>
+</html>
